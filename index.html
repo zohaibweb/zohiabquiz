@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Tammudu+2:wght@400;500&display=swap" rel="stylesheet">
+    
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
@@ -16,8 +18,8 @@
         
     </section>
     <!-- this section about results -->
-    <section class="results">
-       <h1 class="result"> your have got ..... <span class="marks">50%</span>....marks</h1>
+    <section class="results d-none">
+       <h1 class="result"> you have got ..... <span class="marks">50%</span>....marks</h1>
     </section>
     <!-- section options -->
     <section class="options">
@@ -26,49 +28,57 @@
                 please select correct one!
             </h2>
             <form action="#" class="quiz">
-                <p class="quiz-question">
-                    what is your age?
-                </p>
-                <div class="quiz-check">
-                    <input type="radio" name="q1" value="A" id="q1" checked>
-                    <label class="quiz-label" for="q1">18</label>
+                <div class="q-wrap">
+                    <p class="quiz-question">
+                        what is your age?
+                    </p>
+                    <div class="quiz-check">
+                        <input type="radio" name="q1" value="A" id="q1" checked>
+                        <label class="quiz-label" for="q1">18</label>
+                    </div>
+                    <div class="quiz-check">
+                        <input type="radio" name="q1" value="B" id="q2">
+                        <label class="quiz-label" for="q2">20</label>
+                    </div>
                 </div>
-                <div class="quiz-check">
-                    <input type="radio" name="q1" value="B" id="q2">
-                    <label class="quiz-label" for="q2">20</label>
+                <div class="q-wrap">
+                    <p class="quiz-question">
+                        what is your name?
+                    </p>
+                    <div class="quiz-check">
+                        <input type="radio" name="q2" value="A" id="" checked>
+                        <label class="quiz-label">zohaib ul hassan</label>
+                    </div>
+                    <div class="quiz-check">
+                        <input type="radio" name="q2" value="B" id="">
+                        <label class="quiz-label">awais shahid</label>
+                    </div>
                 </div>
-                <p class="quiz-question">
-                    what is your name?
-                </p>
-                <div class="quiz-check">
-                    <input type="radio" name="q2" value="A" id="" checked>
-                    <label class="quiz-label">zohaib ul hassan</label>
+                <div class="q-wrap">
+                    <p class="quiz-question">
+                        what is your program?
+                    </p>
+                    <div class="quiz-check">
+                        <input type="radio" name="q3" value="A" id="" checked>
+                        <label class="quiz-label">computer science</label>
+                    </div>
+                    <div class="quiz-check">
+                        <input type="radio" name="q3" value="B" id="">
+                        <label class="quiz-label">information technology</label>
+                    </div>
                 </div>
-                <div class="quiz-check">
-                    <input type="radio" name="q2" value="B" id="">
-                    <label class="quiz-label">awais shahid</label>
-                </div>
-                <p class="quiz-question">
-                    what is your program?
-                </p>
-                <div class="quiz-check">
-                    <input type="radio" name="q3" value="A" id="" checked>
-                    <label class="quiz-label">computer science</label>
-                </div>
-                <div class="quiz-check">
-                    <input type="radio" name="q3" value="B" id="">
-                    <label class="quiz-label">information technology</label>
-                </div>
-                <p class="quiz-question">
-                    what is your institue?
-                </p>
-                <div class="quiz-check">
-                    <input type="radio" name="q4" value="A" id="" checked>
-                    <label class="quiz-label">iub</label>
-                </div>
-                <div class="quiz-check">
-                    <input type="radio" name="q4" value="B" id="">
-                    <label class="quiz-label">comsats</label>
+                <div class="q-wrap">
+                    <p class="quiz-question">
+                        what is your institue?
+                    </p>
+                    <div class="quiz-check">
+                        <input type="radio" name="q4" value="A" id="" checked>
+                        <label class="quiz-label">islamia university of bahawalpur</label>
+                    </div>
+                    <div class="quiz-check">
+                        <input type="radio" name="q4" value="B" id="">
+                        <label class="quiz-label">comsats islamabad</label>
+                    </div>
                 </div>
                 <button class="submit" type="submit">Submit</button>
             </form>
@@ -77,3 +87,4 @@
     
 </body>
 </html>
+<script src="app.js"></script>

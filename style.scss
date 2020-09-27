@@ -4,16 +4,24 @@ $text-color:#f7f7f7;
 
 
 // main funtionality
-html{
-    font-size: 62.5%;
+*{
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    box-sizing: border-box; 
+}
+html{
+    font-size: 62.5%;
+    
+}
+body {
+    font-family: 'Baloo Tammudu 2', cursive;
+    line-height: 1.45;
+    letter-spacing: .5px;
 }
 .section-one{
     position: relative;
     min-width: 100%;
-    height: 40rem;
+    padding: 15rem 0;
     background-image: linear-gradient(to right bottom,$colorPrimary,$color-secondary);
 }
 
@@ -23,21 +31,20 @@ html{
     font-size: 4rem;
     font-weight: 200;
     text-align: center;
-    padding-top: 18rem;
     letter-spacing: 3px;
     font-style: italic;
     text-transform: capitalize;
 }
 .results{
-    min-width: 100vw;
     background-color: #f7f7f7;
-    padding: 6rem 0 5rem;
+    padding:8rem 0;
 }
 .result{
     color: $colorPrimary;
     text-align: center;
     font-size: 4rem;
     margin: 0;
+    padding: 0;
 }
 .marks{
     padding: 1rem;
@@ -47,26 +54,28 @@ html{
 }
 .options{
     background-image: linear-gradient(to right bottom,$colorPrimary,$color-secondary);
-    padding: 0 4rem;
+    padding: 3rem 2rem;
     &-text{
         text-align: center;
         color: $text-color;
         font-size: 3.5rem;
         font-weight: 400;
-        padding: 4rem;
+        margin: 0 0 2rem;
+        width: 100%;
     }
 }
 .row{
     display: block;
-    min-width: 100vw;
 }
 .quiz{
     color: $text-color;
     &-question{
         font-size: 3rem;
+        margin: 0;
+        width: 100%;
     }
     &-check{
-        padding-right: 3rem;
+        // padding-right: 3rem;
     }
     &-label{
         font-size: 2.8rem;
@@ -86,5 +95,10 @@ html{
         border: none;
         cursor: pointer;
         margin-top: 1rem;
-        margin-bottom: 1rem;
+}
+.d-none{
+    display: none;
+}
+.q-wrap {
+    margin-bottom: 1.6rem;
 }
